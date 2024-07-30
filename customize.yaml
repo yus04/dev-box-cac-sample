@@ -1,0 +1,23 @@
+$schema: 1.0
+tasks:
+  - name: winget
+    parameters:
+      package: Docker.DockerDesktop
+      runAsUser: true
+  - name: winget
+    parameters:
+      package: Postman.Postman
+      runAsUser: true
+  - name: winget
+    parameters:
+      package: Anaconda.Miniconda3
+      runAsUser: true
+  - name: git-clone
+    description: Clone this repository into C:\Workspaces
+    parameters:
+      repositoryUrl: https://github.com/yus04/react-app.git
+      directory: C:\Workspaces
+  - name: install-vs-extension
+    description: Install GitHub Copilot
+    parameters:
+      marketplaceItemName: GitHub.copilotvs
